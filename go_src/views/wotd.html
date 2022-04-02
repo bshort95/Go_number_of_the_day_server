@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {background-image: url('https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;}
+    
+    #form_section, #answer_section{ border-radius: 5px;
+    background: #726b6b;
+    margin: auto;
+    text-align: center;
+    padding: 20px; 
+    width: 50%;
+    height: 50%;  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    box-shadow: 10px 20px #0f0f0f;}
+    </style>
+</head>
+<body>
+<div id = "form_section">
+  <form method="POST" action="/">     
+      <label>Enter A Number Please :</label><input name="number" type="number" id="number" min="1" max="100" />
+      <input type="submit" value="Guess" />
+  </form>
+</div>
+
+<div id = answer_section><h1>{{.MyVar}}</h1></div>
+</body>
+</html>
